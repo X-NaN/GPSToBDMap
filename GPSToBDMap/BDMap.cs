@@ -86,6 +86,7 @@ namespace GPSToBDMap
         private void btn_Map_Click(object sender, EventArgs e)
         {
             string json_points_list = JsonConvert.SerializeObject(points_list);//设备信息json串
+            //2017.11.15 xnn 添加一个注释，测试github
             json_points_list = "[{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5738433},{\"Latitude\":22.37538,\"Longitude\":113.5938433},{\"Latitude\":22.33538,\"Longitude\":113.5238433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433},{\"Latitude\":22.37538,\"Longitude\":113.5638433}]";
             for (int i = 0; i < points_list.Count; i++)
             {
